@@ -1,0 +1,34 @@
+@base <> .
+
+@prefix ah: <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+
+<> a foaf:Document ;
+   dc:date "2025-10-20"^^xsd:date ;
+   dc:title "Vicente's FOAF Profile"@en ;
+   foaf:primaryTopic <#vlc> ;
+   dc:creator <#vlc> .
+
+<#vlc> a foaf:Person ;
+   rdfs:label "Vicente Lepe C" ;
+   rdfs:comment "Student of the DCC"@es , "Estudiante del DCC"@es ;
+   foaf:name "Vicente Lepe C" ;
+   foaf:givenName "Vicente Paolo" ;
+   foaf:familyName "Lepe Crocco" ;
+   foaf:age 26 ;
+   foaf:img <https://raw.githubusercontent.com/VicenteLepe/lab10WebDeDatos/blob/main/yo.jpeg> ;
+   foaf:knows <https://users.dcc.uchile.cl/~ahogan/foaf.ttl> , <https://raw.githubusercontent.com/juansebm/lab10_webofdata/main/foaf.ttl#juanvale> , <http://raw.githubusercontent.com/Marmaduke23/watos/refs/heads/main/foaf.ttl#jjj> , <http://users.dcc.uchile.cl/~pmendoza/foaf.ttl#pm> ;
+   foaf:interest dbr:Semantic_Web , dbr:Astronomy , dbr:Andinism , dbr:Basketball , dbr:Art ; 
+   social:likesMovie dbr:Raiders_of_the_Lost_Ark , dbr:The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring , dbr:La_La_Land ;
+   social:hasSpiritAnimal dbr:Viscacha ;
+   social:hasFavouritePlatonicSolid dbr:Icosahedron ;
+   foaf:nick "Vicho" ;
+   foaf:based_near dbr:Peñalolén .
+   
